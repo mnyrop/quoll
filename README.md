@@ -28,5 +28,10 @@ end
 
 ```yaml
 quoll:
-  
+  main:
+    page: '/' # the path of the page you want to test
+    terms:  # the search terms you expect to yield results
+      - 'capybara'
+      - 'testing'
+      - 'example'
 ```
