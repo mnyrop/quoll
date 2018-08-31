@@ -12,8 +12,16 @@ headlessly test your client-side **[lunr](https://lunrjs.com/)**/**[elasticlunr]
 `Gemfile`:
 
 ```
-gem 'rspec'
-gem 'capybara'
+source 'https://rubygems.org'
+gem 'jekyll'
+
+group :development, :test do
+  gem 'rspec'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+  gem 'capybara'
+  gem 'rack-jekyll'
+end
 ```
 
 `_config.yml`:
